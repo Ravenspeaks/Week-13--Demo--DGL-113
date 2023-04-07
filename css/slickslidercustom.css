@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+/****************************************
+      The remaining portion is for slick slider
+      *****************************************/
+* {
+  box-sizing: border-box;
+}
+
+/*This rule is needed to separate multiple sliders in the example */
+.slider {
+  width: 90%;
+  margin: 80px auto;
+}
+
+/* This rule is needed */
+.slick-slide img {
+  width: 100%;
+  padding: 2px;
+}
+
+.vertical-center-4 img,
+.vertical-center-3 img,
+.vertical-center-2 img,
+.vertical-center img,
+.vertical img {
+  height: 300px;
+  /*added for vertical sliders. Otherwise, sliding inconsistently.*/
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+/*Add some transition effect to sliding*/
+.slick-slide {
+  transition: all ease-in-out 0.3s;
+  opacity: 0.2;
+}
+
+.slick-active {
+  opacity: 0.5;
+}
+
+.slick-current {
+  opacity: 1;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+/*headings are added to show slider types*/
+h2 {
+  margin-top: 2em;
+  margin-bottom: -2em;
+  border-top: 1px solid;
+}
